@@ -1,13 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import sys
-from pathlib import Path
-
-# Ensure project root is importable when running this file directly from any cwd.
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
 
 from app.database import create_user, get_user_by_username, init_db
 from app.security import hash_password

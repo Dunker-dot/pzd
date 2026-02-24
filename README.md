@@ -55,8 +55,6 @@ pip install -r requirements.txt
 python scripts/init_admin.py
 ```
 
-> 也可使用模块方式运行（更稳妥）：`python -m scripts.init_admin`
-
 可通过参数自定义管理员用户名和密码：
 ```bash
 python scripts/init_admin.py --username your_admin --password "your_password"
