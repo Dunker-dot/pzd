@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>仪表盘 - ESL门店演示系统</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 760px; margin: 64px auto; }
+      .card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; }
+      button { padding: 8px 14px; }
+    </style>
+  </head>
+  <body>
+    <h1>ESL门店演示系统 / Dashboard</h1>
+    <div class="card">
+      <p>欢迎你，<strong>{{ username }}</strong>。</p>
+      <p>M1 已完成：登录与受保护页面访问控制。</p>
+      <form action="/logout" method="post">
+        <button type="submit">退出登录</button>
+      </form>
+    </div>
+  </body>
+</html>
